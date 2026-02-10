@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jinay Gadiya - Future Entrepreneur</title>
+    <meta name="description" content="Jinay Gadiya - Business student, aspiring entrepreneur, and boxing athlete from Pune. Discover my journey, passions, and vision for creating meaningful ventures.">
+    <meta name="keywords" content="Jinay Gadiya, entrepreneur, business student, Pune, boxing, portfolio">
+    <meta name="author" content="Jinay Gadiya">
+    <title>Jinay Gadiya - Future Entrepreneur & Business Innovator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">JG</div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="logo">JG</div>
+            <div class="logo">
+                <span class="logo-text">JINAY</span>
+                <span class="logo-dot">•</span>
+                <span class="logo-subtext">GADIYA</span>
+            </div>
             <div class="nav-links">
+                <a href="#home">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
                 <a href="#passions">Passions</a>
+                <a href="#journey">Journey</a>
                 <a href="#contact" class="cta-button">Get in Touch</a>
             </div>
             <div class="hamburger" id="hamburger">
@@ -30,31 +47,76 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">Home</a>
         <a href="#about" class="mobile-link">About</a>
         <a href="#education" class="mobile-link">Education</a>
         <a href="#passions" class="mobile-link">Passions</a>
+        <a href="#journey" class="mobile-link">Journey</a>
         <a href="#contact" class="mobile-link">Get in Touch</a>
     </div>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-gradient"></div>
+        </div>
         <div class="hero-content">
-            <p class="welcome-text">Welcome to my space :)</p>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Available for Opportunities</span>
+            </div>
             <h1 class="hero-title">
-                JINAY<br>
-                GADIYA
-                <div class="profile-image">
-                    <img src="jianyphoto.jpg" alt="Jinay Gadiya">
-                </div>
+                <span class="title-line">
+                    <span class="title-word" data-text="BUILDING">BUILDING</span>
+                </span>
+                <span class="title-line">
+                    <span class="title-word" data-text="THE">THE</span>
+                    <span class="title-word" data-text="FUTURE">FUTURE</span>
+                </span>
             </h1>
-            <div class="hero-sparkle">✦</div>
-            <p class="hero-description">
-                I'm Jinay Gadiya — A business student from Pune with a passion<br>
-                for entrepreneurship and a drive to build something meaningful.
+            <div class="hero-profile">
+                <div class="profile-circle">
+                    <img src="jianyphoto.jpg" alt="Jinay Gadiya" class="profile-img">
+                    <div class="profile-ring"></div>
+                </div>
+            </div>
+            <p class="hero-subtitle">
+                I'm <span class="highlight">Jinay Gadiya</span> — A business student from Pune with an 
+                entrepreneurial mindset, athletic discipline, and a vision to create meaningful impact.
             </p>
+            <div class="hero-cta">
+                <a href="#about" class="btn-primary">
+                    <span>Explore My Journey</span>
+                    <svg class="btn-arrow" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <span>Get In Touch</span>
+                </a>
+            </div>
             <div class="scroll-indicator">
-                <span>↓</span>
-                <p>SCROLL</p>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <p>SCROLL TO DISCOVER</p>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="2">0</h3>
+                <p class="stat-label">Years of Study</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="2">0</h3>
+                <p class="stat-label">Core Passions</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="1">0</h3>
+                <p class="stat-label">Big Vision</p>
             </div>
         </div>
     </section>
@@ -62,23 +124,56 @@
     <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="container">
-            <h2 class="section-title">ABOUT</h2>
+            <div class="section-header">
+                <span class="section-label">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
                 <div class="about-left">
-                    <p class="about-description">
-                        I'm a business student with an entrepreneurial mindset and a hunger for success. 
-                        I believe in taking calculated risks, learning from every experience, and building 
-                        ventures that create real value. My journey is just beginning, but I'm committed 
-                        to making it extraordinary.
-                    </p>
+                    <div class="about-image-wrapper">
+                        <div class="about-decoration"></div>
+                        <p class="about-quote">"Dream big, work hard, stay focused, and surround yourself with good people."</p>
+                    </div>
                 </div>
                 <div class="about-right">
-                    <p class="about-education-intro">
-                        I'm currently pursuing my ISC 12th grade at Bishops Junior College, Pune. 
-                        My focus on business and commerce has equipped me with foundational knowledge 
-                        in economics, accounting, and business studies — all essential tools for my 
-                        entrepreneurial aspirations.
+                    <p class="about-intro">
+                        I'm a business student with an <span class="text-highlight">entrepreneurial mindset</span> 
+                        and a hunger for success. I believe in taking calculated risks, learning from every 
+                        experience, and building ventures that create real value.
                     </p>
+                    <p class="about-description">
+                        Currently pursuing my ISC 12th grade at Bishops Junior College, Pune, my focus on 
+                        business and commerce has equipped me with foundational knowledge in economics, 
+                        accounting, and business studies — all essential tools for my entrepreneurial aspirations.
+                    </p>
+                    <p class="about-description">
+                        My journey is just beginning, but I'm committed to making it extraordinary. Through 
+                        boxing, I've learned discipline and resilience. Through business studies, I've developed 
+                        analytical thinking. Together, these experiences shape my approach to challenges and opportunities.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎯</div>
+                            <div class="highlight-content">
+                                <h4>Mission-Driven</h4>
+                                <p>Building ventures that solve real problems</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">💡</div>
+                            <div class="highlight-content">
+                                <h4>Innovation Focused</h4>
+                                <p>Constantly learning and adapting</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🚀</div>
+                            <div class="highlight-content">
+                                <h4>Growth Mindset</h4>
+                                <p>Every setback is a setup for a comeback</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,25 +182,60 @@
     <!-- Education Section -->
     <section id="education" class="section education-section">
         <div class="container">
-            <h2 class="section-title">EDUCATION</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>Bishops Junior College</h3>
-                    <p class="education-degree">ISC 12th, Business/Commerce, General</p>
-                    <p class="education-date">2023 — Present</p>
-                    <p class="education-description">
-                        Currently pursuing higher secondary education with a focus on business 
-                        and commerce, building a strong foundation for my entrepreneurial journey.
-                    </p>
+            <div class="section-header">
+                <span class="section-label">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-line"></div>
+                <div class="education-item" data-year="2023 — Present">
+                    <div class="education-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="education-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎓</div>
+                            <span class="card-status">Current</span>
+                        </div>
+                        <h3 class="education-school">Bishops Junior College</h3>
+                        <p class="education-degree">ISC 12th, Business/Commerce</p>
+                        <p class="education-date">2023 — Present • Pune, Maharashtra</p>
+                        <p class="education-description">
+                            Pursuing higher secondary education with a focus on business and commerce, 
+                            building a strong foundation for my entrepreneurial journey through comprehensive 
+                            studies in economics, accounting, and business management.
+                        </p>
+                        <div class="education-subjects">
+                            <span class="subject-tag">Business Studies</span>
+                            <span class="subject-tag">Economics</span>
+                            <span class="subject-tag">Accounting</span>
+                            <span class="subject-tag">Commerce</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="education-card">
-                    <h3>The Bishop's School, Pune</h3>
-                    <p class="education-degree">ICSE, Business/Commerce, General</p>
-                    <p class="education-date">2022 — 2023</p>
-                    <p class="education-description">
-                        Completed ICSE with a specialization in business and commerce, 
-                        developing analytical and critical thinking skills.
-                    </p>
+                <div class="education-item" data-year="2022 — 2023">
+                    <div class="education-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="education-card">
+                        <div class="card-header">
+                            <div class="card-icon">📚</div>
+                            <span class="card-status completed">Completed</span>
+                        </div>
+                        <h3 class="education-school">The Bishop's School, Pune</h3>
+                        <p class="education-degree">ICSE, Business/Commerce</p>
+                        <p class="education-date">2022 — 2023 • Pune, Maharashtra</p>
+                        <p class="education-description">
+                            Completed ICSE with a specialization in business and commerce, developing 
+                            analytical and critical thinking skills essential for entrepreneurial success.
+                        </p>
+                        <div class="education-subjects">
+                            <span class="subject-tag">Commerce</span>
+                            <span class="subject-tag">Business Management</span>
+                            <span class="subject-tag">Economics</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,30 +244,125 @@
     <!-- Passions Section -->
     <section id="passions" class="section passions-section">
         <div class="container">
-            <h2 class="section-title">PASSIONS</h2>
+            <div class="section-header">
+                <span class="section-label">What Drives Me</span>
+                <h2 class="section-title">My Passions</h2>
+            </div>
             <div class="passions-grid">
-                <div class="passion-card">
-                    <div class="passion-icon">💼</div>
-                    <h3>Entrepreneurship</h3>
-                    <p class="passion-role">Future Entrepreneur</p>
+                <div class="passion-card entrepreneurship-card">
+                    <div class="passion-bg"></div>
+                    <div class="passion-header">
+                        <div class="passion-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 4L6 14V24C6 34.5 14 43.5 24 44C34 43.5 42 34.5 42 24V14L24 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24 16V28M18 22H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="passion-badge">Core Drive</span>
+                    </div>
+                    <h3 class="passion-title">Entrepreneurship</h3>
+                    <p class="passion-role">Future Business Leader</p>
                     <p class="passion-description">
-                        I'm passionate about building businesses that solve real problems. 
-                        Whether it's identifying market gaps or creating innovative solutions, 
-                        I'm constantly learning, networking, and preparing for my venture. 
-                        My goal is to create value, inspire others, and leave a lasting impact.
+                        I'm passionate about building businesses that solve real problems and create 
+                        meaningful impact. Whether it's identifying market gaps or developing innovative 
+                        solutions, I'm constantly learning, networking, and preparing for my venture.
                     </p>
+                    <div class="passion-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Problem Solving</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Innovation</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Strategic Thinking</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Value Creation</span>
+                        </div>
+                    </div>
+                    <div class="passion-footer">
+                        <p class="passion-goal">Goal: Build ventures that inspire and create lasting impact</p>
+                    </div>
                 </div>
-                <div class="passion-card">
-                    <div class="passion-icon">🥊</div>
-                    <h3>Boxing</h3>
-                    <p class="passion-role">Athlete</p>
+                <div class="passion-card boxing-card">
+                    <div class="passion-bg"></div>
+                    <div class="passion-header">
+                        <div class="passion-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span class="passion-badge">Discipline</span>
+                    </div>
+                    <h3 class="passion-title">Boxing</h3>
+                    <p class="passion-role">Dedicated Athlete</p>
                     <p class="passion-description">
-                        Boxing isn't just a sport for me — it's a way of life. It teaches 
-                        discipline, resilience, and mental toughness. Every round in the ring 
-                        builds my character and pushes me to become stronger, both physically 
-                        and mentally. The same determination I bring to boxing drives my 
-                        entrepreneurial ambitions.
+                        Boxing isn't just a sport for me — it's a way of life that teaches discipline, 
+                        resilience, and mental toughness. Every round in the ring builds character and 
+                        pushes me to become stronger, both physically and mentally.
                     </p>
+                    <div class="passion-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Mental Toughness</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Discipline</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Resilience</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Focus</span>
+                        </div>
+                    </div>
+                    <div class="passion-footer">
+                        <p class="passion-goal">Philosophy: The same determination drives my entrepreneurial ambitions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey/Skills Section -->
+    <section id="journey" class="section journey-section">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">The Path Forward</span>
+                <h2 class="section-title">My Journey</h2>
+                <p class="section-description">
+                    Every entrepreneur's journey is unique. Here's what defines mine.
+                </p>
+            </div>
+            <div class="journey-content">
+                <div class="journey-card">
+                    <div class="journey-number">01</div>
+                    <h3>Foundation</h3>
+                    <p>Building a strong educational base in business and commerce while developing the analytical skills needed for entrepreneurial success.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-number">02</div>
+                    <h3>Learning</h3>
+                    <p>Constantly absorbing knowledge from books, mentors, and real-world experiences. Every lesson shapes my vision and approach.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-number">03</div>
+                    <h3>Networking</h3>
+                    <p>Connecting with like-minded individuals, mentors, and potential collaborators who share the passion for innovation and growth.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-number">04</div>
+                    <h3>Execution</h3>
+                    <p>Transforming ideas into reality through calculated action, resilience, and unwavering commitment to creating meaningful ventures.</p>
                 </div>
             </div>
         </div>
@@ -145,29 +370,77 @@
 
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
+        <div class="contact-background">
+            <div class="contact-gradient"></div>
+        </div>
         <div class="container">
-            <h2 class="section-title">CONTACT</h2>
+            <div class="section-header centered">
+                <span class="section-label">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Looking to connect, collaborate, or just have a conversation? I'm always open to new opportunities and meaningful connections.
+                </p>
+            </div>
             <div class="contact-content">
-                <div class="contact-info">
-                    <p class="contact-description">
-                        Looking to connect, collaborate, or just have a conversation? 
-                        Feel free to reach out to me.
-                    </p>
-                    <div class="contact-details">
-                        <p><strong>Pune, Maharashtra, India</strong></p>
-                        <a href="https://www.linkedin.com/in/jinay-gadiya-690637290/" target="_blank" class="linkedin-link">
-                            Connect on LinkedIn →
+                <div class="contact-info-wrapper">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 12V16L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Pune, Maharashtra<br>India</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M28 6H4V24H28V6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28 10L16 18L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Available via<br>contact form</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <rect x="4" y="4" width="24" height="24" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 12C14.3431 12 13 13.3431 13 15C13 16.6569 14.3431 18 16 18C17.6569 18 19 16.6569 19 15C19 13.3431 17.6569 12 16 12Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M20 20V22M12 20V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Social</h3>
+                        <a href="https://www.linkedin.com/in/jinay-gadiya-690637290/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            LinkedIn Profile →
                         </a>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <input type="text" name="name" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="Email" required>
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         </div>
-                        <textarea name="message" placeholder="Message..." rows="6" required></textarea>
-                        <button type="submit" class="submit-button">Send Message</button>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your idea, opportunity, or just say hello..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -177,9 +450,43 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Jinay Gadiya. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-text">JINAY</span>
+                        <span class="logo-dot">•</span>
+                        <span class="logo-subtext">GADIYA</span>
+                    </div>
+                    <p class="footer-tagline">Building the future, one venture at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#education">Education</a>
+                        <a href="#passions">Passions</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://www.linkedin.com/in/jinay-gadiya-690637290/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jinay Gadiya. All rights reserved.</p>
+                <p class="footer-credit">Designed with passion and purpose</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
 
     <script src="script.js"></script>
 </body>
